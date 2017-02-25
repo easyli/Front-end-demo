@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .container-fluid{
+    
+  }  
+
+.red-text {
+color: red;
+}
+
+h2 {
+font-family: Lobster, Monospace;
+}
+
+p {
+font-size: 16px;
+font-family: Monospace;
+}
+
+.thick-green-border {
+border-color: green;
+border-width: 10px;
+border-style: solid;
+border-radius: 50%;
+}
+
+.btn-info{
+	background-color: green;
+}
+
+.smaller-image {
+width: 100px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<h2 class="text-primary text-center">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" src="http://www.w3cschool.cn/statics/codecamp/images/relaxing-cat.jpg"></a>
+
+<!-- img-responsive适应屏幕宽度 -->
+<a href="#"><img class="img-responsive" src="http://www.w3cschool.cn/statics/codecamp/images/relaxing-cat.jpg"></a>
+
+<p>Things cats <span class="text-danger">love</span>:</p>
+<ul>
+<li>cat nip</li>
+<li>laser pointers</li>
+<li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+<li>flea treatment</li>
+<li>thunder</li>
+<li>other cats</li>
+</ol>
+<form action="/submit-cat-photo">
+<div class="row">
+	<div class="col-xs-6">
+	<label><input type="radio" name="indoor-outdoor"> Indoor</label>
+	</div>
+	<div class="col-xs-6">
+	<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+	</div>
+</div>
+<label><input type="checkbox" name="personality"> Loving</label>
+<label><input type="checkbox" name="personality"> Lazy</label>
+<label><input type="checkbox" name="personality"> Crazy</label>
+<input type="text" class="form-control" placeholder="cat photo URL" required>
+<button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>Submit</button>
+<button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up">Like</i></button>
+<div class="row">
+<div class="col-xs-4">
+<button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+</div>
+<div class="col-xs-4">
+<button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i>Info</button>
+</div>
+<div class="col-xs-4">
+<button class="btn btn-block btn-danger"><i class="fa fa-trash"></i>Delete</button>
+
+</div>
+</div>
+</form>
+</div>
+
+
+</body>
+</html>
